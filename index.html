@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Player</title>
+
+    <!-- Icon -->
+    <link rel="icon" href="images/quran.png">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="player">
+
+            <div class="ayah">اضغط على السورة التي تريد الاستماع إليها</div>
+
+            <audio src="" class="quran-player" controls autoplay></audio>
+
+            <div class="buttons">
+                <div class="icon next">
+                    <i class="fa-solid fa-forward"></i>
+                </div>
+
+                <div class="icon play">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+
+                <div class="icon previous">
+                    <i class="fa-solid fa-backward"></i>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+
+    <div class="surah"></div>
+
+    <!-- Sweet Alert JS CDN Link -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Custom JS File -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

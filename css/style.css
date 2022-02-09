@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Almarai', sans-serif;
+    outline: none;
+    border: none;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+body {
+    direction: rtl;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-image: url(../images/header-bg2.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #0c2e43;
+}
+
+div {
+    line-height: 1.8;
+}
+
+header {
+    height: auto;
+    background-color: #0c2e43;
+    padding: 1rem 5rem;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 5rem;
+    margin: 0 auto;
+    margin-bottom: 1.8rem;
+    z-index: 1;
+    background-image: url(../images/pattern.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(255, 255, 255, 0.1);
+}
+
+header .player .ayah {
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+}
+
+header .player audio {
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    height: 3rem;
+}
+
+header .player .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+header .player .buttons .icon {
+    color: #154766;
+    background-color: #fff;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-size: 1.6rem;
+    cursor: pointer;
+    margin: 0 4rem;
+}
+
+header .player .buttons .icon:hover {
+    opacity: 0.8;
+}
+
+.surah div {
+    margin: 0 auto;
+    color: #fff;
+    background-color: #27767c;
+    box-shadow: 0 .5rem 1.5rem rgba(255, 255, 255, 0.1);
+    font-weight: bold;
+    width: 80%;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: 0.3s color ease;
+    -webkit-transition: 0.3s color ease;
+    -moz-transition: 0.3s color ease;
+    -ms-transition: 0.3s color ease;
+    -o-transition: 0.3s color ease;
+    padding: 1rem 3rem;
+    position: relative;
+    font-size: 1.3rem;
+    counter-increment: surah-counter;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.surah>div::after {
+    content: counter(surah-counter);
+    height: 4rem;
+    width: 4rem;
+    border: 0.01rem solid;
+    position: absolute;
+    top: 50%;
+    left: 1.8rem;
+    color: #fff;
+    font-size: 1.8rem;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    line-height: 4rem;
+    text-align: center;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    transition: 0.3s color ease;
+    -webkit-transition: 0.3s color ease;
+    -moz-transition: 0.3s color ease;
+    -ms-transition: 0.3s color ease;
+    -o-transition: 0.3s color ease;
+}
+
+.surah>div:hover {
+    background: linear-gradient(to bottom, #0c2e43, #134361);
+}
+
+
+/* Media Queries  */
+
+@media (max-width:991px) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media (max-width:768px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width:450px) {
+    header .player audio {
+        width: 100%;
+        height: 4rem;
+    }
+    header .player .buttons {
+        width: 100%;
+    }
+    header .player .buttons .icon {
+        width: 5rem;
+        height: 5rem;
+        line-height: 4rem;
+        padding: 0 1.8rem;
+        margin: 0 2.2rem;
+    }
+}
